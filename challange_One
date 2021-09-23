@@ -1,0 +1,14 @@
+def reverseString (s):
+        c = s[::-1]
+        s.clear()
+        index = 0
+        for i in range(len(c)):
+            s.append(c[index])
+            index += 1
+        return s
+
+
+print('Testing ...')
+assert(reverseString(["h","e","l","l","o"])==["o","l","l","e","h"])
+assert(reverseString(["H","a","n","n","a","h"])==["h","a","n","n","a","H"])
+print('passed')
