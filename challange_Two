@@ -1,0 +1,79 @@
+"" self challange , summer 2020 , trying to write guessing game""
+#include <iostream>
+
+using namespace std;
+class Fschool{
+    public :
+    string fname;
+    int yearofb;
+    string favsub;
+};
+
+int main()
+{
+  Fschool Friend1 ;
+    Friend1.fname = "Friend Y";
+    Friend1.yearofb= 2003;
+    
+Fschool Friend2;
+    Friend2.fname = "Friend x";
+    Friend2.yearofb= 2004;
+
+Fschool Friend3;
+    Friend3.fname = "Friend Z " ;
+    Friend3.yearofb= 2004;
+
+string birthYear;
+ bool bornin03 = true;
+ string ans;
+ string anss;
+
+    cout << "  I will know who YOU are "<< endl;
+    cout << "    so try me "<< endl;
+
+    cout << "  you will be asked a series of questions "<< endl;
+    cout << "  Do not freak out this is not Black magic :) " <<endl;
+    cout << "          "<< endl;
+    cout << " Are you born in 2003 or 2004 "<< endl;
+    cout << "  If 2003 , type ' a ' , if not type ' b ' "<< endl;
+    cin>> birthYear;
+
+           while ( birthYear != "a" && birthYear!= "b" )
+         {
+             cout<< "                    "<< endl;
+
+
+           cout<< "  Go and type what is asked only   " << endl;
+           cout << "                      "<< endl;
+           cout << "  SO again ...  "<<endl;
+           cout << "  If 2003 , type ' a ' , if not type ' b '  "<< endl;
+          cin>> birthYear;
+        }
+
+     if ( bornin03 = true && birthYear == "a"){
+         cout << " are you Friend Y? ";
+          cin >> ans ;
+     } else
+       {
+           cout << "You Won ";
+                  }
+
+       if(bornin03= true && ans=="Yes","yes")
+        {
+            cout<< "Lolwa W O N "<<endl;
+     }
+     else {
+            cout << "You won";
+     }
+
+  cout << " are you Friend X ?";
+    cin >> anss;
+
+        if( bornin03= true && anss=="Yes","yes")
+            {
+            cout<<"Lolwa W O N "<<endl;
+     }
+      else {
+        cout << "you won "<< endl;
+      }
+}
